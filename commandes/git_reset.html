@@ -35,14 +35,25 @@
 	<h1 class="titreCommande">git reset --mixed</h1>
 	
 	<section class="descriptif">
-		<p>Descriptif de la commande détaillé</p>
+		<p>Cette commande permet d'enlever de la file d'attente une modification qui attend d'être committé. Les modifications restent intact mais ne sont plus marqué comme étant en attente d'être committé.</p>
 	</section>
 	
 	<section class="affichage">
 		<h2>Syntaxe</h2>
 			<code>git reset --mixed</code>
 		<h2>Affichage</h2>
-			<code>Exemple de l'affichage de la commande dnas le terminal</code>
+			<code>$ git add Nouveau_dossier.html <br/>
+				  $ git status <br/>
+				  <i>On branch master<br/>
+					 Changes to be committed:</br>
+					 new file : Nouveau_dossier.html</br></i>
+				  $ git reset --mixed</br>
+				  $ git status</br>
+				  <i>On branch master<br/>
+					 Untracked files :</br>
+					(use git add < file >..." to include in what will be committed)</br>
+					 Nouveau_dossier.html</br>
+					 nothing added to commit but untracked files present (use "git add" to track)</code>
 	<section/>
 	
 	<h1 class="titreCommande">git reset --hard</h1>
