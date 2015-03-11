@@ -10,7 +10,7 @@
 		<p href="./index.html">Menu</p>
 	</nav>
 	
-	<h1 id="titreCommande">git checkout</h1>
+	<h1 class="titreCommande">git checkout</h1>
 	
 	<section class="descriptif">
 		<p>Descriptif de la commande détaillé</p>
@@ -26,6 +26,12 @@
 		<h2>Affichage</h2>
 			<code>Exemple de la commande dans le terminal</code>
 	</section>
+	
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout -m</h1>
 		
 	<section class="descriptif">	
 		<p>En commutant de branche, si vous avez des modifications locales sur un ou plusieurs fichiers qui sont différents entre la branche actuelle et la branche sur laquelle vous commutez, la commande refuse de commuter, c'est la qu'interviens la fonction "git checkout -m", en effet avec celle-ci un merge à trois voies(entre trois parties) se créé entre la branche actuelle, votre contenu d'arbre de travail et la nouvelle branche. Lorsque la commande a été executée vous vous retrouverez sur la nouvelle branche.  </p>
@@ -38,6 +44,14 @@
 			<code>git checkout -m </code> ou encore <code> git checkout --merge </code>
 	</section>
 		
+		
+		
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout -b</h1>
+	
 	<section class="descriptif">
 		<p>La fonction git checkout -b permet de créer une branche comme si la fonction "git branch" est appelée, sauf qu'ensuite nous nous retrouverons directement sur la nouvelle branche créée.  </p>
 	</section>
@@ -49,6 +63,11 @@
 			<code> switched to a new branch 'nom de la branche' </code>
 	</section>
 	
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout -- <paths> </h1>	
 	<section class="descriptif">
 		<p> git checkout -- <paths> </p>
 	</section>
@@ -64,6 +83,13 @@
 			<p>Pour mettre à jour l'arbre avec des fichiers ou des répertoires situées dans une autre branche, on procède comme ceci:</p>
 			<code>git checkout <branch_name> -- <paths></code>
 	</section>
+	
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout -t</h1>
+	
 	
 	<section class="descriptif">
 		<p>git checkout -t <br> git checkout --track <br>
@@ -83,7 +109,11 @@
 		<h2>Affichage</h2>
 			<code>$ git checkout -b <branch> --track <remote>/<branch> <br> </code>
 	<section/>
+	<br>
+	<br>
+	<br>
 	
+	<h1 class="titreCommande">git checkout -f</h1>	
 	<section class="descriptif"
 		<p> git checkout -f <br> git checkout --force <br>
 		Réinitialise <nomdelabranche> à <startpoint> si <nomdelabranche> existe déjà. <br>
@@ -100,6 +130,12 @@
 		
 	</section>
 	
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout --detach</h1>	
+	
 	<section class="descriptif">
 		<p> ici nous allons détailler la commande git checkout --detach, qui permet de détacher le HEAD, lorsque que vous etes dans un état de "HEAD détaché" vous pouvez faire des changements experimentaux et ensuite commit. Vous pouvez vous débarasser de chaque commit que vous faites dans cet état sans avoir aucun impacte sur toutes les branches en faisant d'autres checkout. Si vous voulez créer une nouvelle branche afin de conserver tous les commits que vous avez créer, vous pouvez le faire avec la commande git checkout -b <nom de la branche> </p>
 	</section>
@@ -110,6 +146,11 @@
 		<h2>Affichage</h2>
 			<code>Note: checking out 'HEAD'. HEAD is now at <espace où se situe le HEAD> :space_invader: added.gitattributes & gitignore file </code>
 	</section>
+	
+	
+	<br>
+	<br>
+	<br>
 	
 	<footer>		
 		<p>Git Manual - Par Lebataclan, incognitomada et Iwantaponey </p>
