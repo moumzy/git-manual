@@ -1,103 +1,166 @@
 <!DOCTYPE HTML>
 <head>
-	<title>Git tag</title>
+	<title>git tag</title>
 	<meta charset="UTF-8">
-	<link href="css/commandes.css" rel="stylesheet" type"text/css">
+	<link href="../css/style.css" rel="stylesheet" type"text/css">
 </head>
 
 <body>
-	<nav>
-		<p href="./index.html">Menu</p>
-	</nav>
-	<h1 id="titreCommande">git tag</h1>
+	<div id="titre"> 
+            <h1> <a href="index.html"> <img src="../images/logo.png" alt="logo" > </img> </a> <br>git tag</h1>
+        </div>
+        <div id="nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div id="corps">
+
+	<h3 id="titreCommande">git tag/<h3>
+	<section class="descriptif">
+		<p>Cette commande permet d'afficher toutes les étiquettes référencées dans refs/tags/. Elles s'affichent par ordre alphabétique.</p>
+		
+	</section>
+	
+	<section id="affichage">
+		<h4>Syntaxe</h4>	
+			<code>git tag</code>
+
+		<div class="code">
+			<code>
+			v1.0<br>
+			v2.0<br>
+			v3.0<br>
+			etc..
+			</code>
+		</div>
+	</section>
+	
+	
+	
+	<h3 id="titreCommande">git tag -a</h3>
 	
 	<section class="descriptif">
-		<p>Descriptif de la commande détaillé</p>
-		<h2>Syntaxe</h2>
-			<code>Exemple de l'affichage de la commande dans le terminal</code>
+		<p>Cette commande permet de créer des étiquettes annotées. En utilisant seulement cette commande, Git ouvre l'éditeur pour spécifier le message d'étiquetage qui sera stocké avec l'étiquette
+		(voir plus loin pour éviter cela). Utilisez ensuite git tag pour afficher l'étiquette créée. </p>
+		
 	</section>
 	
-	<section class="exemple">
-		<p>Ecrire ici la commande</p>
-		<h2>Affichage</h2>
-		<code>Exemple de l'affichage de la commande dans le terminal</code>
+	<section id="affichage">
+		<h4>Syntaxe</h4>
+			<code>git tag -a v1.0<br>
+			git tag
+			</code>
+		<h4>Affichage</h4>
+		<div class="code">
+			<code>
+			v1.0
+			</code>
+	</div>
 	</section>
 	
 	
-	<h1 id="titreCommande">git tag -a</h1>
+	<h3 id="titreCommande">git tag -d</h3>
 	
 	<section class="descriptif">
-		<p>Descriptif de la commande détaillé</p>
-		<h2>Syntaxe</h2>
-			<code>Exemple de l'affichage de la commande dans le terminal</code>
+		<p>Cette commande permet de supprimer l'étiquette choisie</p>
+		
 	</section>
 	
-	<section class="exemple">
-		<p>Ecrire ici la commande</p>
-		<h2>Affichage</h2>
-		<code>Exemple de l'affichage de la commande dans le terminal</code>
+	<section id="affichage">
+		<h4>Syntaxe</h4>
+			<code>git tag -d v1.0
+			</code>
+		<h4>Affichage</h4>
+		<div class="code">
+			<code>Deleted tag 'v1.0' (was a545472)</code>
+	</div>
 	</section>
 	
 	
-	<h1 id="titreCommande">git tag -d</h1>
+	<h3 id="titreCommande">git tag -f</h3>
 	
 	<section class="descriptif">
-		<p>Descriptif de la commande détaillé</p>
-		<h2>Syntaxe</h2>
-			<code>Exemple de l'affichage de la commande dans le terminal</code>
+		<p>Cette commande permet de modifier le message d'étiquetage stocké avec une étiquette existante. Git va ouvrir votre éditeur pour le modifier.
+		</p>
+		
 	</section>
 	
-	<section class="exemple">
-		<p>Ecrire ici la commande</p>
-		<h2>Affichage</h2>
-		<code>Exemple de l'affichage de la commande dans le terminal</code>
+	<section id="affichage">
+		<h4>Syntaxe</h4>
+			<code>git tag -a v1.0 -f</code>
+		<h4>Affichage</h4>
+			<div class="code">
+		<code>Updated tag 'v1.0' (was 5d04ass)</code>
+		</div>
 	</section>
 	
 	
-	<h1 id="titreCommande">git tag -f</h1>
+	<h3 id="titreCommande">git tag -m</h3>
 	
 	<section class="descriptif">
-		<p>Descriptif de la commande détaillé</p>
-		<h2>Syntaxe</h2>
-			<code>Exemple de l'affichage de la commande dans le terminal</code>
+		<p>Cette commande permet de spécifier le message d'étiquetage qui sera stocké avec l'étiquette.Si vous ne spécifiez pas de message en ligne pour une étiquette annotée, Git lance votre éditeur pour pouvoir le saisir.
+		Pour afficher ce message, entrez la commande git show gitname</p>
+		
 	</section>
 	
-	<section class="exemple">
-		<p>Ecrire ici la commande</p>
-		<h2>Affichage</h2>
-		<code>Exemple de l'affichage de la commande dans le terminal</code>
-	</section>
-	
-	
-	<h1 id="titreCommande">git tag -m</h1>
-	
-	<section class="descriptif">
-		<p>Descriptif de la commande détaillé</p>
-		<h2>Syntaxe</h2>
-			<code>Exemple de l'affichage de la commande dans le terminal</code>
-	</section>
-	
-	<section class="exemple">
-		<p>Ecrire ici la commande</p>
-		<h2>Affichage</h2>
-		<code>Exemple de l'affichage de la commande dans le terminal</code>
+	<section id="affichage">
+		<h4>Syntaxe</h4>
+			<code>git tag -a v1.0 -m Etiquette<br>
+			git show v1.0
+			</code>
+		<h4>Affichage</h4>
+			<div class="code">
+			<code>
+			tag v1.0<br>
+			tagger:	ThomasBrebant <brebant.thomas@gmail.com><br>
+			Date: Wed Mar 11 13:20:52 2015 +0100<br>
+
+			Etiquette<br>
+			
+			commit fe233da7003bd31ef9c7dacd7eb712db2760a7e9<br>
+			Merge: 4bc30de ca13fa1<br>
+			Author:Nambrok <spaceship84@gmail.com>	<br>
+
+				Merge pull request #57 from ducks-skills/gh-pages<br>
+
+				Css 1.102
+			</code>
+			</div>
 	</section>
 
-	<h1 id="titreCommande">git push --tags</h1>
-	
+	<h3 id="titreCommande">git push --tags</h3>
+
 	<section class="descriptif">
-		<p>Descriptif de la commande détaillé</p>
-		<h2>Syntaxe</h2>
-			<code>Exemple de l'affichage de la commande dans le terminal</code>
+		<p>Si vous avez de nombreuses étiquettes que vous souhaitez pousser en une fois, vous pouvez utiliser la commande git push --tags. Ceci transférera toutes les nouvelles étiquettes vers le serveur distant.</p>
+		
 	</section>
 	
-	<section class="exemple">
-		<p>Ecrire ici la commande</p>
-		<h2>Affichage</h2>
-		<code>Exemple de l'affichage de la commande dans le terminal</code>
-	</section>
-<footer>		
-		<p>Git Manual - Par Thomas Brebant</p>
+	<section class="affichage">
+		<h4>Syntaxe</h4>
+			<code>git push --tags</code>
+		<h4>Affichage</h4>
+		 	<div class="code">
+				<code>
+				Counting objects: 50, done.<br>
+				Compressing objects: 100% (38/38), done.<br>
+				Writing objects: 100% (44/44), 4.56 KiB, done.<br>
+				Total 44 (delta 18), reused 8 (delta 1)<br>
+				To git@github.com:schacon/simplegit.git<br>
+ 				* [new tag]         v0.1 -> v0.1<br>
+				* [new tag]         v1.2 -> v1.2<br>
+ 				* [new tag]         v1.4 -> v1.4<br>
+ 				* [new tag]         v1.4-lw -> v1.4-lw<br>
+ 				* [new tag]         v1.5 -> v1.5
+				</code>
+			</div>
+		</section>
+
+	</div>
+	<footer>		
+	<p>© Groupe d'IN202 2014-2015 UVSQ - Par Thomas Brebant</p>
 	</footer>
 	
 </body>
