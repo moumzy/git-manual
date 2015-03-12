@@ -1,0 +1,47 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>git init</title>
+        <meta charset="UTF-8">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="titre"> 
+            <h1> <a href="../index.html"> <img src="../images/logo.png" alt="logo" > </img> </a> <br>Git init</h1>
+        </div>
+        <div id="nav">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                    </ul>
+                </nav>
+        </div>
+		<h1>Git clone init</h1>
+        <div id="corps">
+        <section class="descriptif">
+                <p>
+				<code>git init</code> est la commande qui permet de créer un dépôt vide ou de réinitialiser le dépôt courant.
+				Ce dépot est un répertoire .git contenant les sous-répertoires <code> objects</code>, <code>refs/head</code> et <code>refs/tags</code>
+				Un fichier <code>HEAD</code> contenant le HEAD de la branche master est aussi crée.
+				</br>
+				Faire un <code>git init</code> dans un répertoire existant n'écrase pas les données. L'utilité principale dans ce cas de figure est d'utiliser
+				l'architecture des fichiers existante sans devoir recréer les dossiers.
+				</p>
+              <!--Description de la commande -->
+        </section>
+
+        <section class="affichage">
+            <h4>Syntaxe :</h4>
+                        <code>git init</code>
+                        Affichera :
+                        <div class="code">
+                            <code>Initialized empty git repository in [répertoire choisit] </code>
+                        </div>
+        </section>
+
+
+    </div>
+<footer>
+    <p> © Groupe d'IN202 2014-2015 UVSQ - Par Moumzy, MaxouUVSQ, Protosspaspris</p>
+</footer>
