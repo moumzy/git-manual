@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<head>
+	<title>git checkout</title>
+	<meta charset="UTF-8">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav>
+		<p href="./index.html">Menu</p>
+	</nav>
+	
+	<h1 class="titreCommande">git checkout</h1>
+	
+	<section class="descriptif">
+		<p>Descriptif de la commande détaillé</p>
+		
+		<p>La commande  git checkout permet de naviguer entre les branches crées par git branch. Lorsque l'on utilise cette commande,
+		les fichiers présents dans le répertoire pour correspondre à la version stockée dans cette branche et Git enregistrera tous les
+  		nouveaux commits de la branche. Il faut voir cette commande comme un moyen de sélectionner sur quelle ligne de développement on est en train de travailler.</p>
+	</section>
+	
+	<section class="affichage">
+		<h2>Syntaxe</h2>
+			<code>git checkout</code> 
+	</section>
+	
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout -m</h1>
+		
+	<section class="descriptif">	
+		<p>En commutant de branche, si vous avez des modifications locales sur un ou plusieurs fichiers qui sont différents entre la branche actuelle et la branche sur laquelle vous commutez, la commande refuse de commuter, c'est la qu'interviens la fonction "git checkout -m", en effet avec celle-ci un merge à trois voies(entre trois parties) se créé entre la branche actuelle, votre contenu d'arbre de travail et la nouvelle branche. Lorsque la commande a été executée vous vous retrouverez sur la nouvelle branche.  </p>
+	</section>
+		
+	<section class="affichage">
+		<h2>Syntaxe</h2>
+			<code>git checkout -m </code> 
+		<h2>Affichage</h2>
+			<code>git checkout -m </code> ou encore <code> git checkout --merge </code>
+	</section>
+		
+		
+		
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout -b</h1>
+	
+	<section class="descriptif">
+		<p>La fonction git checkout -b permet de créer une branche comme si la fonction "git branch" est appelée, sauf qu'ensuite nous nous retrouverons directement sur la nouvelle branche créée.  </p>
+	</section>
+	
+	<section class="affichage">
+		<h2>Syntaxe</h2>
+			<code>git checkout -b branch </code> 
+		<h2>Affichage</h2>
+			<code> switched to a new branch 'nom de la branche' </code>
+	</section>
+	
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout -- paths </h1>	
+	<section class="descriptif">
+		<p> git checkout -- paths </p>
+	</section>
+	
+	<section class="affichage">
+		<h2>Syntaxe</h2>
+			<code>git checkout -- paths </code> 
+			<p>Quand <code><paths></code> ou --patch est entré, git checkout ne change pas de branche. Il met à jour le chemin nommé dans l'arbre de travail
+			depuis le fichier index ou depuis <code><tree-ish> </code>(presque toujours un commit). </p> 
+		<h2>Affichage</h2>
+			<p>La syntaxe pour utiliser git checkout pour mettre à jour l'arbre de travail avec un fichier depuis un tree-ish est : </p>
+			<code>git checkout [-p|--patch] [<tree-ish>] [--] pathspec…</code>
+			<p>Pour mettre à jour l'arbre avec des fichiers ou des répertoires situées dans une autre branche, on procède comme ceci:</p>
+			<code>git checkout <branch_name> -- paths</code>
+	</section>
+	
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout -t</h1>
+	
+	
+	<section class="descriptif">
+		<p>git checkout -t <br> git checkout --track <br>
+		Lorsque vous créez une nouvelle branche, cela configure l'option «upstream».
+		<br>Consultez «--track» dans <a href = git_branch.html>  git-branch </a> pour plus de détails.
+		<br>Lorsque vous clonez un dépôt, il crée généralement automatiquement une branche master qui suit origin/master. 
+		<br>C’est pourquoi les commandes git push et git pull fonctionnent directement sans plus de paramétrage. 
+		<br>Vous pouvez néanmoins créer d’autres branches de suivi si vous le souhaitez, qui ne suivront pas origin ni la branche master.
+		<br>Un cas d’utilisation simple est l’exemple précédent, en lançant git checkout -b [branche] [nomdistant]/ [branche].
+		<br>Si vous avez Git version 1.6.2 ou plus, vous pouvez aussi utiliser l’option courte -- track ou -t. <br></p>
+	</section>	
+
+	<section class="affichage">
+		<h2>Syntaxe</h2>
+			<code>git checkout -t</code> <p><br> ou alors on peut aussi écrire <br> </p>
+			<code>git checkout --track <br> </code>
+		<h2>Affichage</h2>
+			<code>$ git checkout -b <branch> --track <remote>/<branch> <br> </code>
+	<section/>
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout -f</h1>	
+	<section class="descriptif"
+		<p> git checkout -f <br> git checkout --force <br>
+		Réinitialise nomdelabranche à startpoint si nomdelabranche existe déjà. <br>
+		Sans git checkout -f <a href = git_branch.html> git branch </a> refuse de changer une branche existante. <br>
+		</p>
+	</section>
+
+	<section class="affichage">
+		<h2>Syntaxe</h2>
+			<code>git checkout -f</code> <p><br> ou alors on peut aussi écrire <br></p>
+			<code>git checkout --force <br> </code>
+		<h2>Affichage</h2>
+			<code>$ git branch -f <branch> [<start point>]</code>
+		
+	</section>
+	
+	<br>
+	<br>
+	<br>
+	
+	<h1 class="titreCommande">git checkout --detach</h1>	
+	
+	<section class="descriptif">
+		<p> ici nous allons détailler la commande git checkout --detach, qui permet de détacher le HEAD, lorsque que vous etes dans un état de "HEAD détaché" vous pouvez faire des changements experimentaux et ensuite commit. Vous pouvez vous débarasser de chaque commit que vous faites dans cet état sans avoir aucun impacte sur toutes les branches en faisant d'autres checkout. Si vous voulez créer une nouvelle branche afin de conserver tous les commits que vous avez créer, vous pouvez le faire avec la commande git checkout -b <nom de la branche> </p>
+	</section>
+	
+		<section class="affichage">
+		<h2>Syntaxe</h2>
+			<code>git checkout --detach</code>
+		<h2>Affichage</h2>
+			<code>Note: checking out 'HEAD'. HEAD is now at <espace où se situe le HEAD> :space_invader: added.gitattributes & gitignore file </code>
+	</section>
+	
+	
+	<br>
+	<br>
+	<br>
+	
+	<footer>		
+		<p>Git Manual - Par Lebataclan, incognitomada et Iwantaponey </p>
+	</footer>
+	
+</body>

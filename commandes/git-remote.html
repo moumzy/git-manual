@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Git remote</title>
+	<meta charset="UTF-8">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	  <div id="titre"> 
+            <h1> <a href="../index.html"> <img src="../images/logo.png" alt="logo" > </img> </a> <br>git remote</h1>
+        </div>
+        <div id="nav">
+                <nav>
+                    <ul>
+                        <li class="nolastmen"><a href="../index.html">Accueil</a></li>
+                    </ul>
+                </nav>
+        </div>
+		
+    <div id="corps">
+	<section class="descriptif">
+		<p>La commande permet d'afficher la ou les branches qui vous suivent 
+		   lorsque vous commitez</p>
+	</section>	   
+	
+	<section class="affichage">
+		<h4>Syntaxe</h4>
+			<div class="code">
+			<code>git remote</code>
+			</div>
+	
+		<h4>Affichage</h4>
+			<code>git remote <br> origin</code>
+	</section>
+	
+	
+	<h3 id="titreCommande">git remote add</h3>
+	
+	<section class="descriptif">
+		<p>La commande permet d'ajouter un depot à un nomCourt pour faciliter son utilisation <br>
+		   Ensuite, si vous voulez recuperer des information sur un URL et que vous ayez utilise <i>git remote add</i> <br>
+		   vous pouvez utiliser le nomCourt lié à cette URL en utiilisant la commande <i>git fetch nomCourt</i></p>
+	</section>
+	
+	<section class="affichage">
+		<h4>Syntaxe</h4>
+			<code>git remote add</code>
+	
+			<div class="code">
+			<code>git remote add [nom] [URL] <br> nom URL <br><br>
+			Autre exemple <br>
+			git remote add test https://github.com/nomUtilisateur/projetX <br>
+			test https://github.com/nomUtilisateur/projetX</code>
+			</div>
+	</section>
+	
+	
+	<h3 id="titreCommande">git remote rename</h3>
+	
+	<section class="descriptif">
+		<p>Cette commande permet de renomer de nomCourt pour à autre nom. On va reprendre l'exemple précédant. <br>
+		Vous pouvez toujours supprimer la réference avec la commmande <i>git remote rm nomCourt </i></p>
+		</section>
+		
+		<section class="affichage">
+		<h4>Syntaxe</h4>
+			<code>git remote rename ancienNomCourt nouceauNomCourt</code>
+	
+		<div class="code">
+			<code>git remote add test https://github.com/nomUtilisateur/projetX <br>
+			test https://github.com/nomUtilisateur/projetX <br>
+			git remote <br> origin <br> test <br> <br>
+			git remote rename test pjtX <br>
+			git remote <br> origin <br> pjtX</code>
+		</div>
+	</section>
+	
+	
+	<h3 id="titreCommande">git remote remove</h3>
+	
+	<section class="descriptif">
+		<p>Git remote remove est utilisé afin de supprimer ce que le remote lui même a fait.
+		Vous avez fait un remote et donc donné un nom à ce remote. Si vous voulez supprimer ce que vous venez de faire avec le remote,
+		il faut juste taper git remote remove dans la console afin de supprimer cela.</p>
+		
+	</section>
+	
+	<section class="affichage">
+		<h4>Syntaxe</h4>
+			<code>git remote remove (et le nom du remote)</code>
+	
+		<div class="code">
+			<code>$ git remote remove <br>
+			def**<br>
+			origin<br>
+			upstream<br>
+			$ git remote remove upstream <br>
+			$ git remote<br>
+			defeo<br>
+			origin<br>
+			</code>
+		</div>
+	</section>
+	
+	
+	<h3 id="titreCommande">git remote set-url</h3>
+	
+	<section class="descriptif">
+	
+		<p>Git remote set-url change l'url pour le remote. Si aucune url n'est déjà présente,
+		la fonction crée une nouvelle url.
+		Par contre si il y a déjà une url et on utilise cette fonction en ne mettant pas le bon nom,
+		alors la console vous affichera une erreur et aucun changement ne sera effectué.
+		</p>
+		
+	</section>
+	
+	<section class="affichage">
+		<h4>Syntaxe</h4>
+			<code>git remote set-url</code>
+	
+		<div class="code">
+		
+			$ git remote set-url <br>
+			usage: git remote set-url[--push] <name> <newurl> [<oldurl>] <br>
+			or: git remote set-url --add <name> <newurl> <br>
+			or: git remote set-url--delete <name> <url> <br><br>
+			
+			--push				manipulate push URLs<br>
+			--add				add URL<br>
+			--delete			delete URLs</code>
+		</div>
+	</section>
+	
+	</div>
+	<footer>		
+		<p> © Groupe d'IN202 2014-2015 UVSQ - Par nom des participants</p>
+	</footer>
+	
+</body>
